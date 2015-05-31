@@ -13,6 +13,10 @@
 		F9087F4D1B1A37AC00767FD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9087F4C1B1A37AC00767FD3 /* Images.xcassets */; };
 		F9087F501B1A37AC00767FD3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9087F4E1B1A37AC00767FD3 /* LaunchScreen.xib */; };
 		F9087F5C1B1A37AC00767FD3 /* NoiseMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9087F5B1B1A37AC00767FD3 /* NoiseMakerTests.swift */; };
+		F9087F711B1B43A600767FD3 /* applause.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9087F6D1B1B43A600767FD3 /* applause.wav */; };
+		F9087F721B1B43A600767FD3 /* bubbles.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9087F6E1B1B43A600767FD3 /* bubbles.wav */; };
+		F9087F731B1B43A600767FD3 /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9087F6F1B1B43A600767FD3 /* guitar.wav */; };
+		F9087F741B1B43A600767FD3 /* monster.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9087F701B1B43A600767FD3 /* monster.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		F9087F551B1A37AC00767FD3 /* NoiseMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoiseMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9087F5A1B1A37AC00767FD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9087F5B1B1A37AC00767FD3 /* NoiseMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseMakerTests.swift; sourceTree = "<group>"; };
+		F9087F6D1B1B43A600767FD3 /* applause.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = applause.wav; sourceTree = "<group>"; };
+		F9087F6E1B1B43A600767FD3 /* bubbles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubbles.wav; sourceTree = "<group>"; };
+		F9087F6F1B1B43A600767FD3 /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
+		F9087F701B1B43A600767FD3 /* monster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = monster.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +98,10 @@
 		F9087F431B1A37AC00767FD3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F9087F6D1B1B43A600767FD3 /* applause.wav */,
+				F9087F6E1B1B43A600767FD3 /* bubbles.wav */,
+				F9087F6F1B1B43A600767FD3 /* guitar.wav */,
+				F9087F701B1B43A600767FD3 /* monster.wav */,
 				F9087F441B1A37AC00767FD3 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,9 +204,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9087F741B1B43A600767FD3 /* monster.wav in Resources */,
+				F9087F731B1B43A600767FD3 /* guitar.wav in Resources */,
 				F9087F4B1B1A37AC00767FD3 /* Main.storyboard in Resources */,
+				F9087F721B1B43A600767FD3 /* bubbles.wav in Resources */,
 				F9087F501B1A37AC00767FD3 /* LaunchScreen.xib in Resources */,
 				F9087F4D1B1A37AC00767FD3 /* Images.xcassets in Resources */,
+				F9087F711B1B43A600767FD3 /* applause.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

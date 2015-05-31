@@ -19,5 +19,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func playGuitar(sender: UIButton) {
+        // play guitar sound
+    }
+    
+    @IBAction func playApplause(sender: UIButton) {
+        // play applause sound
+    }
+    
+    @IBAction func playMonster(sender: UIButton) {
+        // play monster sound
+    }
+    
+    @IBAction func playBubbles(sender: UIButton) {
+        // play bubbles sound
+    }
+    
 }
 

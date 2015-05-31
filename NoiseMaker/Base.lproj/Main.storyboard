@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NoiseMaker" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,7 +15,55 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86d-Kd-yYB">
+                                <rect key="frame" x="189" y="183" width="42" height="30"/>
+                                <state key="normal" title="Guitar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playGuitar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rva-Bs-9lr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTf-JM-pey">
+                                <rect key="frame" x="358" y="183" width="64" height="30"/>
+                                <state key="normal" title="Applause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playApplause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DLf-a1-5Uo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-PD-iRa">
+                                <rect key="frame" x="182" y="306" width="57" height="30"/>
+                                <state key="normal" title="Monster">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playMonster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egk-qi-U1r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yc6-R9-qug">
+                                <rect key="frame" x="362" y="306" width="57" height="30"/>
+                                <state key="normal" title="Bubbles">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playBubbles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OG5-G5-Gbb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NTf-JM-pey" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="163" id="IHW-If-hh0"/>
+                            <constraint firstAttribute="centerX" secondItem="86d-Kd-yYB" secondAttribute="centerX" constant="90" id="aNm-3k-Hk4"/>
+                            <constraint firstAttribute="centerX" secondItem="yc6-R9-qug" secondAttribute="centerX" constant="-90.5" id="bLE-U5-1Nd"/>
+                            <constraint firstItem="yc6-R9-qug" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="286" id="etL-9s-rWN"/>
+                            <constraint firstItem="86d-Kd-yYB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="163" id="nFw-tu-bpO"/>
+                            <constraint firstItem="cLN-PD-iRa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="286" id="nXQ-aX-afE"/>
+                            <constraint firstAttribute="centerX" secondItem="NTf-JM-pey" secondAttribute="centerX" constant="-90" id="o3f-pC-VQc"/>
+                            <constraint firstAttribute="centerX" secondItem="cLN-PD-iRa" secondAttribute="centerX" constant="89.5" id="smb-DV-J69"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
