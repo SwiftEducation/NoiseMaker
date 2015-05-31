@@ -22,34 +22,34 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="playGuitar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rva-Bs-9lr"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nge-tR-DDs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTf-JM-pey">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTf-JM-pey">
                                 <rect key="frame" x="358" y="183" width="64" height="30"/>
                                 <state key="normal" title="Applause">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="playApplause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DLf-a1-5Uo"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AGe-y2-48E"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-PD-iRa">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-PD-iRa">
                                 <rect key="frame" x="182" y="306" width="57" height="30"/>
                                 <state key="normal" title="Monster">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="playMonster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="egk-qi-U1r"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZiY-IU-daE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yc6-R9-qug">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yc6-R9-qug">
                                 <rect key="frame" x="362" y="306" width="57" height="30"/>
                                 <state key="normal" title="Bubbles">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="playBubbles:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OG5-G5-Gbb"/>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zgD-4d-dtC"/>
                                 </connections>
                             </button>
                         </subviews>
