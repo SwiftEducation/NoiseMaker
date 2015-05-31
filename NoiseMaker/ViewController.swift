@@ -6,14 +6,10 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 */
 
 import UIKit
-import AVFoundation
 
 class ViewController: UIViewController {
 
-    var guitarPlayer: AVAudioPlayer?
-    var applausePlayer: AVAudioPlayer?
-    var monsterPlayer: AVAudioPlayer?
-    var bubblesPlayer: AVAudioPlayer?
+    let noiseMaker = NoiseMaker()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,27 +22,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func playGuitar(sender: UIButton) {
-        let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav")
-        guitarPlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
-        guitarPlayer!.play()
+        noiseMaker.playGuitarSound()
     }
     
     @IBAction func playApplause(sender: UIButton) {
-        let url = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav")
-        applausePlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
-        applausePlayer!.play()
+        noiseMaker.playApplauseSound()
     }
     
     @IBAction func playMonster(sender: UIButton) {
-        let url = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav")
-        monsterPlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
-        monsterPlayer!.play()
+        noiseMaker.playMonsterSound()
     }
     
     @IBAction func playBubbles(sender: UIButton) {
-        let url = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav")
-        bubblesPlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
-        bubblesPlayer!.play()
+        noiseMaker.playBubblesSound()
     }
     
 }

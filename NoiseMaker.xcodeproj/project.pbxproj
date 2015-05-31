@@ -17,6 +17,7 @@
 		F9087F721B1B43A600767FD3 /* bubbles.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9087F6E1B1B43A600767FD3 /* bubbles.wav */; };
 		F9087F731B1B43A600767FD3 /* guitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9087F6F1B1B43A600767FD3 /* guitar.wav */; };
 		F9087F741B1B43A600767FD3 /* monster.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9087F701B1B43A600767FD3 /* monster.wav */; };
+		F9087F761B1B5BF400767FD3 /* NoiseMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9087F751B1B5BF400767FD3 /* NoiseMaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F9087F6E1B1B43A600767FD3 /* bubbles.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bubbles.wav; sourceTree = "<group>"; };
 		F9087F6F1B1B43A600767FD3 /* guitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = guitar.wav; sourceTree = "<group>"; };
 		F9087F701B1B43A600767FD3 /* monster.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = monster.wav; sourceTree = "<group>"; };
+		F9087F751B1B5BF400767FD3 /* NoiseMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseMaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				F9087F451B1A37AC00767FD3 /* AppDelegate.swift */,
 				F9087F471B1A37AC00767FD3 /* ViewController.swift */,
+				F9087F751B1B5BF400767FD3 /* NoiseMaker.swift */,
 				F9087F491B1A37AC00767FD3 /* Main.storyboard */,
 				F9087F4C1B1A37AC00767FD3 /* Images.xcassets */,
 				F9087F4E1B1A37AC00767FD3 /* LaunchScreen.xib */,
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9087F481B1A37AC00767FD3 /* ViewController.swift in Sources */,
+				F9087F761B1B5BF400767FD3 /* NoiseMaker.swift in Sources */,
 				F9087F461B1A37AC00767FD3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
