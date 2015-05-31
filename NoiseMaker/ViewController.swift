@@ -23,19 +23,27 @@ class ViewController: UIViewController {
     }
 
     @IBAction func playGuitar(sender: UIButton) {
-        // play guitar sound
+        let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav")
+        player = AVAudioPlayer(contentsOfURL: url, error: nil)
+        player!.play()
     }
     
     @IBAction func playApplause(sender: UIButton) {
-        // play applause sound
+        let url = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav")
+        player = AVAudioPlayer(contentsOfURL: url, error: nil)
+        player!.play()
     }
     
     @IBAction func playMonster(sender: UIButton) {
-        // play monster sound
+        let url = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav")
+        player = AVAudioPlayer(contentsOfURL: url, error: nil)
+        player!.play()
     }
     
     @IBAction func playBubbles(sender: UIButton) {
-        // play bubbles sound
+        let url = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav")
+        player = AVAudioPlayer(contentsOfURL: url, error: nil)
+        player!.play()
     }
     
 }
