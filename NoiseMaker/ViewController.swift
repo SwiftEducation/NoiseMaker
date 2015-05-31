@@ -10,7 +10,10 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    var player: AVAudioPlayer?
+    var guitarPlayer: AVAudioPlayer?
+    var applausePlayer: AVAudioPlayer?
+    var monsterPlayer: AVAudioPlayer?
+    var bubblesPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,26 +27,26 @@ class ViewController: UIViewController {
 
     @IBAction func playGuitar(sender: UIButton) {
         let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav")
-        player = AVAudioPlayer(contentsOfURL: url, error: nil)
-        player!.play()
+        guitarPlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
+        guitarPlayer!.play()
     }
     
     @IBAction func playApplause(sender: UIButton) {
         let url = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav")
-        player = AVAudioPlayer(contentsOfURL: url, error: nil)
-        player!.play()
+        applausePlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
+        applausePlayer!.play()
     }
     
     @IBAction func playMonster(sender: UIButton) {
         let url = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav")
-        player = AVAudioPlayer(contentsOfURL: url, error: nil)
-        player!.play()
+        monsterPlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
+        monsterPlayer!.play()
     }
     
     @IBAction func playBubbles(sender: UIButton) {
         let url = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav")
-        player = AVAudioPlayer(contentsOfURL: url, error: nil)
-        player!.play()
+        bubblesPlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
+        bubblesPlayer!.play()
     }
     
 }
