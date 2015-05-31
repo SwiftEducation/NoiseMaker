@@ -22,19 +22,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func playGuitar(sender: UIButton) {
-        noiseMaker.playGuitarSound()
+        noiseMaker.play(0)
     }
     
     @IBAction func playApplause(sender: UIButton) {
-        noiseMaker.playApplauseSound()
+        noiseMaker.play(1)
     }
     
     @IBAction func playMonster(sender: UIButton) {
-        noiseMaker.playMonsterSound()
+        noiseMaker.play(2)
     }
     
     @IBAction func playBubbles(sender: UIButton) {
-        noiseMaker.playBubblesSound()
+        noiseMaker.play(3)
     }
     
 }
