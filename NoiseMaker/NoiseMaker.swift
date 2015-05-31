@@ -9,33 +9,36 @@ import AVFoundation
 
 class NoiseMaker {
     
-    private var guitarPlayer: AVAudioPlayer?
-    private var applausePlayer: AVAudioPlayer?
-    private var monsterPlayer: AVAudioPlayer?
-    private var bubblesPlayer: AVAudioPlayer?
+    private let guitarPlayer: AVAudioPlayer
+    private let applausePlayer: AVAudioPlayer
+    private let monsterPlayer: AVAudioPlayer
+    private let bubblesPlayer: AVAudioPlayer
     
-    func playGuitarSound() {
+    init() {
         let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav")
         guitarPlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
-        guitarPlayer!.play()
+        let url2 = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav")
+        applausePlayer = AVAudioPlayer(contentsOfURL: url2, error: nil)
+        let url3 = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav")
+        monsterPlayer = AVAudioPlayer(contentsOfURL: url3, error: nil)
+        let url4 = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav")
+        bubblesPlayer = AVAudioPlayer(contentsOfURL: url4, error: nil)
+    }
+    
+    func playGuitarSound() {
+        guitarPlayer.play()
     }
     
     func playApplauseSound() {
-        let url = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav")
-        applausePlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
-        applausePlayer!.play()
+        applausePlayer.play()
     }
     
     func playMonsterSound() {
-        let url = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav")
-        monsterPlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
-        monsterPlayer!.play()
+        monsterPlayer.play()
     }
     
     func playBubblesSound() {
-        let url = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav")
-        bubblesPlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
-        bubblesPlayer!.play()
+        bubblesPlayer.play()
     }
     
 }
