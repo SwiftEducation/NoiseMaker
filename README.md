@@ -1,6 +1,14 @@
+<img align="right" src="https://raw.github.com/SwiftEducation/NoiseMaker/master/NoiseMaker/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40@2x.png" />
 # NoiseMaker
 
 
+## Level 3, Ten Lessons
+
+Introduce students to the AV Foundation framework, and show students how to play sounds within an app. Teach asynchronous method calls with audio playback. Facilitate the reduction of repetitive code while leveraging data structures, <code>map</code> and closures.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 # License
 
