@@ -1,4 +1,4 @@
-<img align="right" src="https://raw.github.com/SwiftEducation/NoiseMaker/master/NoiseMaker/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40@2x.png" />
+<img align="right" src="https://github.com/SwiftEducation/NoiseMaker/raw/master/NoiseMaker/Images.xcassets/AppIcon.appiconset/Icon-Spotlight-40@2x.png" />
 
 # NoiseMaker
 
@@ -8,7 +8,7 @@ Introduce students to the AV Foundation framework, and show students how to play
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md)
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
