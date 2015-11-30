@@ -24,25 +24,25 @@ class ViewController: UIViewController {
 
     @IBAction func playGuitar(sender: UIButton) {
         let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav")
-        player = AVAudioPlayer(contentsOfURL: url, error: nil)
+        player = try? AVAudioPlayer(contentsOfURL: url!)
         player!.play()
     }
     
     @IBAction func playApplause(sender: UIButton) {
         let url = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav")
-        player = AVAudioPlayer(contentsOfURL: url, error: nil)
+        player = try? AVAudioPlayer(contentsOfURL: url!)
         player!.play()
     }
     
     @IBAction func playMonster(sender: UIButton) {
         let url = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav")
-        player = AVAudioPlayer(contentsOfURL: url, error: nil)
+        player = try? AVAudioPlayer(contentsOfURL: url!)
         player!.play()
     }
     
     @IBAction func playBubbles(sender: UIButton) {
         let url = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav")
-        player = AVAudioPlayer(contentsOfURL: url, error: nil)
+        player = try? AVAudioPlayer(contentsOfURL: url!)
         player!.play()
     }
     
