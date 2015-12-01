@@ -16,13 +16,13 @@ class NoiseMaker {
     
     init() {
         let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav")
-        guitarPlayer = AVAudioPlayer(contentsOfURL: url, error: nil)
+        guitarPlayer = try! AVAudioPlayer(contentsOfURL: url!)
         let url2 = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav")
-        applausePlayer = AVAudioPlayer(contentsOfURL: url2, error: nil)
+        applausePlayer = try! AVAudioPlayer(contentsOfURL: url2!)
         let url3 = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav")
-        monsterPlayer = AVAudioPlayer(contentsOfURL: url3, error: nil)
+        monsterPlayer = try! AVAudioPlayer(contentsOfURL: url3!)
         let url4 = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav")
-        bubblesPlayer = AVAudioPlayer(contentsOfURL: url4, error: nil)
+        bubblesPlayer = try! AVAudioPlayer(contentsOfURL: url4!)
     }
     
     func playGuitarSound() {
