@@ -15,7 +15,7 @@ class NoiseMaker {
     init() {
         players = audioFileNames.map { filename in
             let url = NSBundle.mainBundle().URLForResource(filename, withExtension: "wav")
-            return AVAudioPlayer(contentsOfURL: url, error: nil)
+            return try! AVAudioPlayer(contentsOfURL: url!)
         }
     }
     
