@@ -10,18 +10,21 @@ import AVFoundation
 class NoiseMaker {
     
     let audioFileNames = ["guitar", "applause", "monster", "bubbles"]
-    var players: [AVAudioPlayer]
+    let players: [AVAudioPlayer?]
     
     init() {
         players = audioFileNames.map { filename in
-            let url = NSBundle.mainBundle().URLForResource(filename, withExtension: "wav")
-            return try! AVAudioPlayer(contentsOfURL: url!)
+            if let url = NSBundle.mainBundle().URLForResource(filename, withExtension: "wav") {
+                return try? AVAudioPlayer(contentsOfURL: url)
+            } else {
+                return nil
+            }
         }
     }
     
     func play(index: Int) {
         if !players.isEmpty && index >= 0 && index < players.count {
-            players[index].play()
+            players[index]?.play()
         }
     }
     
