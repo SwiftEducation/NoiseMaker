@@ -15,27 +15,31 @@ class NoiseMaker {
     private var bubblesPlayer: AVAudioPlayer?
     
     func playGuitarSound() {
-        let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav")
-        guitarPlayer = try? AVAudioPlayer(contentsOfURL: url!)
-        guitarPlayer!.play()
+        if let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav") {
+            guitarPlayer = try? AVAudioPlayer(contentsOfURL: url)
+            guitarPlayer?.play()
+        }
     }
     
     func playApplauseSound() {
-        let url = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav")
-        applausePlayer = try? AVAudioPlayer(contentsOfURL: url!)
-        applausePlayer!.play()
+        if let url = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav") {
+            applausePlayer = try? AVAudioPlayer(contentsOfURL: url)
+            applausePlayer?.play()
+        }
     }
     
     func playMonsterSound() {
-        let url = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav")
-        monsterPlayer = try? AVAudioPlayer(contentsOfURL: url!)
-        monsterPlayer!.play()
+        if let url = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav") {
+            monsterPlayer = try? AVAudioPlayer(contentsOfURL: url)
+            monsterPlayer?.play()
+        }
     }
     
     func playBubblesSound() {
-        let url = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav")
-        bubblesPlayer = try? AVAudioPlayer(contentsOfURL: url!)
-        bubblesPlayer!.play()
+        if let url = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav") {
+            bubblesPlayer = try? AVAudioPlayer(contentsOfURL: url)
+            bubblesPlayer?.play()
+        }
     }
     
 }
