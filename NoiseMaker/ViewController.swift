@@ -26,27 +26,31 @@ class ViewController: UIViewController {
     }
 
     @IBAction func playGuitar(sender: UIButton) {
-        let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav")
-        guitarPlayer = try? AVAudioPlayer(contentsOfURL: url!)
-        guitarPlayer!.play()
+        if let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav") {
+            guitarPlayer = try? AVAudioPlayer(contentsOfURL: url)
+            guitarPlayer?.play()
+        }
     }
     
     @IBAction func playApplause(sender: UIButton) {
-        let url = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav")
-        applausePlayer = try? AVAudioPlayer(contentsOfURL: url!)
-        applausePlayer!.play()
+        if let url = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav") {
+            applausePlayer = try? AVAudioPlayer(contentsOfURL: url)
+            applausePlayer?.play()
+        }
     }
     
     @IBAction func playMonster(sender: UIButton) {
-        let url = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav")
-        monsterPlayer = try? AVAudioPlayer(contentsOfURL: url!)
-        monsterPlayer!.play()
+        if let url = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav") {
+            monsterPlayer = try? AVAudioPlayer(contentsOfURL: url)
+            monsterPlayer?.play()
+        }
     }
     
     @IBAction func playBubbles(sender: UIButton) {
-        let url = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav")
-        bubblesPlayer = try? AVAudioPlayer(contentsOfURL: url!)
-        bubblesPlayer!.play()
+        if let url = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav") {
+            bubblesPlayer = try? AVAudioPlayer(contentsOfURL: url)
+            bubblesPlayer?.play()
+        }
     }
     
 }
