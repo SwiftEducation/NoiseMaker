@@ -9,36 +9,40 @@ import AVFoundation
 
 class NoiseMaker {
     
-    private let guitarPlayer: AVAudioPlayer
-    private let applausePlayer: AVAudioPlayer
-    private let monsterPlayer: AVAudioPlayer
-    private let bubblesPlayer: AVAudioPlayer
+    private var guitarPlayer: AVAudioPlayer?
+    private var applausePlayer: AVAudioPlayer?
+    private var monsterPlayer: AVAudioPlayer?
+    private var bubblesPlayer: AVAudioPlayer?
     
     init() {
-        let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav")
-        guitarPlayer = try! AVAudioPlayer(contentsOfURL: url!)
-        let url2 = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav")
-        applausePlayer = try! AVAudioPlayer(contentsOfURL: url2!)
-        let url3 = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav")
-        monsterPlayer = try! AVAudioPlayer(contentsOfURL: url3!)
-        let url4 = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav")
-        bubblesPlayer = try! AVAudioPlayer(contentsOfURL: url4!)
+        if let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav") {
+            guitarPlayer = try? AVAudioPlayer(contentsOfURL: url)
+        }
+        if let url2 = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav") {
+            applausePlayer = try? AVAudioPlayer(contentsOfURL: url2)
+        }
+        if let url3 = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav") {
+            monsterPlayer = try? AVAudioPlayer(contentsOfURL: url3)
+        }
+        if let url4 = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav") {
+            bubblesPlayer = try? AVAudioPlayer(contentsOfURL: url4)
+        }
     }
     
     func playGuitarSound() {
-        guitarPlayer.play()
+        guitarPlayer?.play()
     }
     
     func playApplauseSound() {
-        applausePlayer.play()
+        applausePlayer?.play()
     }
     
     func playMonsterSound() {
-        monsterPlayer.play()
+        monsterPlayer?.play()
     }
     
     func playBubblesSound() {
-        bubblesPlayer.play()
+        bubblesPlayer?.play()
     }
     
 }
