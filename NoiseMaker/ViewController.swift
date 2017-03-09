@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func playSound(sender: UIButton) {
+    @IBAction func playSound(_ sender: UIButton) {
         noiseMaker.play(sender.tag)
     }
     
