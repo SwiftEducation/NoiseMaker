@@ -22,30 +22,30 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func playGuitar(sender: UIButton) {
-        if let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav") {
-            player = try? AVAudioPlayer(contentsOfURL: url)
+    @IBAction func playGuitar(_ sender: UIButton) {
+        if let url = Bundle.main.url(forResource: "guitar", withExtension: "wav") {
+            player = try? AVAudioPlayer(contentsOf: url)
             player?.play()
         }
     }
     
-    @IBAction func playApplause(sender: UIButton) {
-        if let url = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav") {
-            player = try? AVAudioPlayer(contentsOfURL: url)
+    @IBAction func playApplause(_ sender: UIButton) {
+        if let url = Bundle.main.url(forResource: "applause", withExtension: "wav") {
+            player = try? AVAudioPlayer(contentsOf: url)
             player?.play()
         }
     }
     
-    @IBAction func playMonster(sender: UIButton) {
-        if let url = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav") {
-            player = try? AVAudioPlayer(contentsOfURL: url)
+    @IBAction func playMonster(_ sender: UIButton) {
+        if let url = Bundle.main.url(forResource: "monster", withExtension: "wav") {
+            player = try? AVAudioPlayer(contentsOf: url)
             player?.play()
         }
     }
     
-    @IBAction func playBubbles(sender: UIButton) {
-        if let url = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav") {
-            player = try? AVAudioPlayer(contentsOfURL: url)
+    @IBAction func playBubbles(_ sender: UIButton) {
+        if let url = Bundle.main.url(forResource: "bubbles", withExtension: "wav") {
+            player = try? AVAudioPlayer(contentsOf: url)
             player?.play()
         }
     }
