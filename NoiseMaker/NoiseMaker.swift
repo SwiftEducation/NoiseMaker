@@ -14,15 +14,15 @@ class NoiseMaker {
     
     init() {
         players = audioFileNames.map { filename in
-            if let url = NSBundle.mainBundle().URLForResource(filename, withExtension: "wav") {
-                return try? AVAudioPlayer(contentsOfURL: url)
+            if let url = Bundle.main.url(forResource: filename, withExtension: "wav") {
+                return try? AVAudioPlayer(contentsOf: url)
             } else {
                 return nil
             }
         }
     }
     
-    func play(index: Int) {
+    func play(_ index: Int) {
         if !players.isEmpty && index >= 0 && index < players.count {
             players[index]?.play()
         }
