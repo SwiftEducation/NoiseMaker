@@ -15,17 +15,17 @@ class NoiseMaker {
     private var bubblesPlayer: AVAudioPlayer?
     
     init() {
-        if let url = NSBundle.mainBundle().URLForResource("guitar", withExtension: "wav") {
-            guitarPlayer = try? AVAudioPlayer(contentsOfURL: url)
+        if let url = Bundle.main.url(forResource: "guitar", withExtension: "wav") {
+            guitarPlayer = try? AVAudioPlayer(contentsOf: url)
         }
-        if let url2 = NSBundle.mainBundle().URLForResource("applause", withExtension: "wav") {
-            applausePlayer = try? AVAudioPlayer(contentsOfURL: url2)
+        if let url2 = Bundle.main.url(forResource: "applause", withExtension: "wav") {
+            applausePlayer = try? AVAudioPlayer(contentsOf: url2)
         }
-        if let url3 = NSBundle.mainBundle().URLForResource("monster", withExtension: "wav") {
-            monsterPlayer = try? AVAudioPlayer(contentsOfURL: url3)
+        if let url3 = Bundle.main.url(forResource: "monster", withExtension: "wav") {
+            monsterPlayer = try? AVAudioPlayer(contentsOf: url3)
         }
-        if let url4 = NSBundle.mainBundle().URLForResource("bubbles", withExtension: "wav") {
-            bubblesPlayer = try? AVAudioPlayer(contentsOfURL: url4)
+        if let url4 = Bundle.main.url(forResource: "bubbles", withExtension: "wav") {
+            bubblesPlayer = try? AVAudioPlayer(contentsOf: url4)
         }
     }
     
